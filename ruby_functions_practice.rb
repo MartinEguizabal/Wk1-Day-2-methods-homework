@@ -61,6 +61,24 @@ def number_to_full_month_name(month)
     end
 end
 
+def number_to_full_month_name(month)
+  word_month = {
+    1 => "January", 
+    2 => "February", 
+    3 => "March", 
+    4 => "April", 
+    5 => "May", 
+    6 => "June", 
+    7 => "July", 
+    8 => "August", 
+    9 => "September", 
+    10 => "October", 
+    11 => "November", 
+    12 => "December"}
+
+    return word_month[month]
+end
+  
 def number_to_short_month_name(month)
   return number_to_full_month_name(month).slice(0,3)
 end
